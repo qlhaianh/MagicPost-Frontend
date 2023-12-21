@@ -1,0 +1,17 @@
+<div>
+    <h2>Xác nhận hàng không chuyển được đến người nhận</h2>
+    <form (ngSubmit)="rejectShipment()">
+      <input type="text" placeholder="Mã đơn hàng" [(ngModel)]="shipmentCode" required>
+      <!-- Thêm các trường thông tin cần cho xác nhận không chuyển được đơn hàng -->
+      <button type="submit">Xác nhận và trả lại</button>
+    </form>
+    <div *ngIf="isSuccess">
+      <!-- Hiển thị thông báo khi xác nhận không chuyển được đơn hàng thành công -->
+      <p>Đã xác nhận và trả lại hàng không chuyển được đến điểm giao dịch.</p>
+    </div>
+    <div *ngIf="errorMessage">
+      <!-- Hiển thị thông báo khi có lỗi -->
+      <p>{{ errorMessage }}</p>
+    </div>
+  </div>
+  

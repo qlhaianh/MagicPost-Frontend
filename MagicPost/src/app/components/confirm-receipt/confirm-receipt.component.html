@@ -1,0 +1,17 @@
+<div>
+    <h2>Xác nhận hàng đã chuyển đến tay người nhận</h2>
+    <form (ngSubmit)="confirmReceipt()">
+      <input type="text" placeholder="Mã đơn hàng" [(ngModel)]="shipmentCode" required>
+      <!-- Thêm các trường thông tin cần cho xác nhận đơn hàng -->
+      <button type="submit">Xác nhận</button>
+    </form>
+    <div *ngIf="isSuccess">
+      <!-- Hiển thị thông báo khi xác nhận đơn hàng thành công -->
+      <p>Đã xác nhận hàng đã chuyển đến tay người nhận.</p>
+    </div>
+    <div *ngIf="errorMessage">
+      <!-- Hiển thị thông báo khi có lỗi -->
+      <p>{{ errorMessage }}</p>
+    </div>
+  </div>
+  

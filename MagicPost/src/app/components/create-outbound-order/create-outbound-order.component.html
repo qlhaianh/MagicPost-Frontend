@@ -1,0 +1,11 @@
+<!-- create-outbound-order.component.html -->
+<div>
+    <h2>Tạo đơn chuyển hàng gửi đến điểm tập kết</h2>
+    <form (submit)="createOutboundOrder()">
+      <input type="text" placeholder="Mã kiện hàng" [(ngModel)]="orderDetails.parcelCode">
+      <input type="text" placeholder="Địa chỉ điểm tập kết" [(ngModel)]="orderDetails.destinationAddress">
+      <!-- Thêm các trường thông tin cần cho tạo đơn chuyển hàng -->
+      <button type="submit">Tạo đơn chuyển hàng</button>
+    </form>
+  </div>
+  

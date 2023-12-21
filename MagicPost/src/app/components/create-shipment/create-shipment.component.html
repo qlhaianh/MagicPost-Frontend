@@ -1,0 +1,18 @@
+<div>
+    <h2>Tạo đơn hàng chuyển đến người nhận</h2>
+    <form (submit)="createShipment()">
+      <input type="text" placeholder="Tên người nhận" [(ngModel)]="shipmentDetails.receiverName">
+      <input type="text" placeholder="Địa chỉ người nhận" [(ngModel)]="shipmentDetails.receiverAddress">
+      <!-- Thêm các trường thông tin cần cho tạo đơn hàng -->
+      <button type="submit">Tạo đơn hàng</button>
+    </form>
+    <div *ngIf="isSuccess">
+      <!-- Hiển thị thông báo khi tạo đơn hàng thành công -->
+      <p>Đã tạo đơn hàng thành công.</p>
+    </div>
+    <div *ngIf="errorMessage">
+      <!-- Hiển thị thông báo khi có lỗi -->
+      <p>{{ errorMessage }}</p>
+    </div>
+  </div>
+  

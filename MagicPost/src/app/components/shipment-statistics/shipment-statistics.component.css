@@ -1,0 +1,33 @@
+/* shipment-statistics.component.css */
+
+/* Style cho phần header */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style cho các nút chức năng */
+  button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Style cho kết quả thống kê */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  

@@ -1,0 +1,10 @@
+<!-- confirm-inbound-order.component.html -->
+<div>
+    <h2>Xác nhận đơn hàng về từ điểm tập kết</h2>
+    <form (submit)="confirmInboundOrder()">
+      <input type="text" placeholder="Mã đơn hàng" [(ngModel)]="orderId">
+      <!-- Thêm các trường thông tin cần cho xác nhận đơn hàng về -->
+      <button type="submit">Xác nhận đơn hàng về</button>
+    </form>
+  </div>
+  

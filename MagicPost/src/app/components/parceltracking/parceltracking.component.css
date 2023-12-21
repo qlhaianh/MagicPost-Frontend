@@ -1,0 +1,11 @@
+/* track-parcel.component.css */
+.parcel-tracking {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  input, button {
+    margin-bottom: 10px;
+  }
+  

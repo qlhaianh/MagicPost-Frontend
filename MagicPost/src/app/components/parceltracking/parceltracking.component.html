@@ -1,0 +1,14 @@
+<!-- track-parcel.component.html -->
+<div class="parcel-tracking">
+    <h2>Tra cứu kiện hàng</h2>
+    <input type="text" placeholder="Nhập mã kiện hàng" [(ngModel)]="parcelId">
+    <button (click)="trackParcel()">Tra cứu</button>
+    
+    <div *ngIf="parcelDetails">
+      <!-- Hiển thị thông tin trạng thái và tiến trình chuyển phát của kiện hàng -->
+      <p>Trạng thái: {{ parcelDetails.status }}</p>
+      <p>Tiến trình chuyển phát: {{ parcelDetails.progress }}</p>
+      <!-- Các thông tin khác cần thiết -->
+    </div>
+  </div>
+  

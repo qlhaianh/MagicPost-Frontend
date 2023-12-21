@@ -1,0 +1,14 @@
+<div>
+    <h2>Thống kê hàng chuyển đi</h2>
+    <button (click)="getSuccessfulShipments()">Xem các hàng chuyển thành công</button>
+    <button (click)="getFailedShipments()">Xem các hàng chuyển không thành công</button>
+    <button (click)="getReturnedShipments()">Xem các hàng trả lại điểm giao dịch</button>
+  
+    <div *ngIf="shipments">
+      <h3>Kết quả:</h3>
+      <ul>
+        <li *ngFor="let shipment of shipments">{{ shipment }}</li>
+      </ul>
+    </div>
+  </div>
+  

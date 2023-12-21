@@ -1,0 +1,18 @@
+<!-- receive-parcel.component.html -->
+<div>
+    <h2>Ghi nhận hàng cần gửi</h2>
+    <form (submit)="receiveParcel()">
+      <input type="text" placeholder="Tên hàng" [(ngModel)]="parcelInfo.name">
+      <input type="text" placeholder="Địa chỉ người gửi" [(ngModel)]="parcelInfo.senderAddress">
+      <!-- Thêm các trường thông tin cần cho ghi nhận hàng -->
+      <button type="submit">Ghi nhận</button>
+    </form>
+  
+    <!-- Hiển thị giấy biên nhận sau khi in -->
+    <div *ngIf="printedReceipt" class="printed-receipt">
+      <h3>Giấy biên nhận:</h3>
+      <p>Mã đơn hàng: {{ printedReceipt.orderId }}</p>
+      <!-- Hiển thị các thông tin khác từ giấy biên nhận -->
+    </div>
+  </div>
+  

@@ -1,0 +1,43 @@
+/* confirm-receipt.component.css */
+
+/* Style cho phần header */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style cho form */
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+  
+  input[type="text"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style cho thông báo */
+  p {
+    margin-top: 10px;
+    color: #d9534f;
+  }
+  
